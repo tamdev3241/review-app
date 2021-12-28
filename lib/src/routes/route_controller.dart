@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../constants/route_name.dart';
 import '../screens/home_screen/home_screen.dart';
 import '../screens/not_found_screen/not_found_screen.dart';
+import '../screens/splash_screen/splash_screen.dart';
 
 class RouteController {
   static CupertinoPageRoute pageRoute(RouteSettings settings) {
@@ -12,6 +13,7 @@ class RouteController {
       builder: (_) {
         switch (settings.name) {
           case RouteName.initial:
+            return const SplashScreen();
           case RouteName.home:
             return const HomeScreen();
           default:
