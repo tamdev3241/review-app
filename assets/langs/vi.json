@@ -1,4 +1,17 @@
 {
+    "trending_title" : "Trending",
+    "trending_decs" : "Nơi bắt nguồn cho những địa điểm & xu hướng ăn uống",
+    "social_title" : "Social",
+    "social_decs" : "Cộng đồng kết nối người yêu thích ăn uống & du lịch",
+    "reviu_title" : "Reviu",
+    "reviu_decs" : "Chất lượng - Khách quan - Chân thật",
     "login_button" : "Đăng nhập",
-    "skip_login_button" : "Để sau"
+    "skip_login_button" : "Để sau",
+    
+
+    "setting_title" : "Cài đặt",
+    "language_title" : "Ngôn ngữ",
+    "vi_lang" : "Việt Nam",
+    "en_lang" : "English",
+    "dark_theme_title" : "Chế độ ban đêm"
 }

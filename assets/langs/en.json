@@ -1,4 +1,16 @@
 {
+    "trending_title" : "Trending",
+    "trending_decs" : "The originating place for Food Places & Trending",
+    "social_title" : "Social",
+    "social_decs" : "Community connecting peoples who love food & travel",
+    "reviu_title" : "Reviu",
+    "reviu_decs" : "Quanlity - Objective - Respectable",
     "login_button" : "Login",
-    "skip_login_button" : "Skip"
+    "skip_login_button" : "Skip",
+
+    "setting_title" : "Setting",
+    "language_title" : "Languages",
+    "vi_lang" : "VietNamese",
+    "en_lang" : "English",
+    "dark_theme_title" : "Dark mode"
 }

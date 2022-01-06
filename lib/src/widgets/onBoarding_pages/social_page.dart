@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:review_app/src/localizations/app_localization.dart';
 
 import '../../constants/string_constants.dart';
 import '../../constants/theme.dart';
@@ -6,23 +7,30 @@ import '../../constants/theme.dart';
 class SocialPage extends StatelessWidget {
   const SocialPage({Key? key}) : super(key: key);
 
+  final EdgeInsetsGeometry _socialImagePadding = const EdgeInsets.all(40.0);
+  final EdgeInsetsGeometry _socialTitlePadding =
+      const EdgeInsets.only(bottom: 10.0);
+  final EdgeInsetsGeometry _socialDecsPadding =
+      const EdgeInsets.symmetric(horizontal: 30.0);
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final lang = AppLocalization.of(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Padding(
-          padding: const EdgeInsets.only(bottom: 10.0),
+          padding: _socialTitlePadding,
           child: Text(
-            'Social',
+            lang.localized(StringContants.socialTitleKey),
             style: theme.textTheme.headline1,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30.0),
+          padding: _socialDecsPadding,
           child: Text(
-            'Cộng đồng kết nối người yêu thích ăn uống & du lịch',
+            lang.localized(StringContants.socialDecsKey),
             style: theme.textTheme.headline5!.copyWith(
               fontWeight: AppFontWeight.regular,
             ),
@@ -30,7 +38,7 @@ class SocialPage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(40.0),
+          padding: _socialImagePadding,
           child: Image.asset(AppAssets.social),
         ),
       ],

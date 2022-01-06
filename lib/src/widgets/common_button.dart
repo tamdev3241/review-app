@@ -9,7 +9,7 @@ class CommonButton extends StatelessWidget {
   final TextStyle? labelStyle;
   final EdgeInsetsGeometry padding;
   final Color? backgroundColor;
-  final Color? shadowColor;
+
   final double borderRadius;
   final double elevation;
   const CommonButton({
@@ -17,7 +17,6 @@ class CommonButton extends StatelessWidget {
     required this.label,
     this.labelStyle,
     this.backgroundColor = ColorConstants.primaryColor,
-    this.shadowColor = Colors.transparent,
     this.padding = const EdgeInsets.symmetric(vertical: 15.0),
     this.onPressed,
     this.borderRadius = 10.0,
@@ -32,16 +31,16 @@ class CommonButton extends StatelessWidget {
           color: Colors.white,
           fontWeight: AppFontWeight.bold,
         );
-    return ElevatedButton(
+    return MaterialButton(
       onPressed: onPressed ?? () {},
-      style: ElevatedButton.styleFrom(
-        shadowColor: shadowColor,
-        primary: backgroundColor,
-        elevation: elevation,
-        padding: padding,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius),
-        ),
+      elevation: elevation,
+      highlightElevation: elevation,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      color: backgroundColor,
+      padding: padding,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(borderRadius),
       ),
       child: Text(
         label,

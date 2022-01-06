@@ -31,7 +31,7 @@ class AppLocalization {
     return true;
   }
 
-  String locaized(String key) => _localizationString[key] ?? key;
+  String localized(String key) => _localizationString[key] ?? key;
 }
 
 class _AppLocalizationDelege extends LocalizationsDelegate<AppLocalization> {

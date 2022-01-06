@@ -26,6 +26,8 @@ class AppTheme {
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.dark,
       ),
+      elevation: 0.0,
+      backgroundColor: Colors.white,
     ),
     textTheme: const TextTheme(
       headline1: TextStyle(
@@ -95,6 +97,7 @@ class AppTheme {
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light,
       ),
+      backgroundColor: Colors.black,
     ),
     textTheme: const TextTheme(
       headline1: TextStyle(

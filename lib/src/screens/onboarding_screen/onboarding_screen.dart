@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:review_app/src/constants/route_names.dart';
+import 'package:review_app/src/constants/string_constants.dart';
 import 'package:review_app/src/localizations/app_localization.dart';
 
 import '../../widgets/common_button.dart';
@@ -41,7 +43,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               children: [
                 Expanded(
                   child: CommonButton(
-                    label: lang.locaized('login_button'),
+                    label: lang.localized(StringContants.loginButtonKey),
                   ),
                 ),
               ],
@@ -53,11 +55,13 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               children: [
                 Expanded(
                   child: CommonButton(
-                    label: lang.locaized('skip_login_button'),
+                    label: lang.localized(StringContants.skipLoginButtonKey),
                     labelStyle: theme.textTheme.headline5!.copyWith(
                       color: theme.iconTheme.color,
                     ),
-                    backgroundColor: Colors.grey[200],
+                    backgroundColor: Colors.grey.withOpacity(0.2),
+                    onPressed: () =>
+                        Navigator.pushNamed(context, RouteName.setting),
                   ),
                 ),
               ],
